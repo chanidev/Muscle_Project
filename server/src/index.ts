@@ -15,8 +15,9 @@ const KAKAO_CLIENT_ID = process.env.KAKAO_CLIENT_ID!;
 const KAKAO_CLIENT_SECRET = process.env.KAKAO_CLIENT_SECRET ?? '';
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID!;
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!;
-const KAKAO_CALLBACK = `http://localhost:${PORT}/api/auth/kakao/callback`;
-const GOOGLE_CALLBACK = `http://localhost:${PORT}/api/auth/google/callback`;
+const SERVER_URL = process.env.SERVER_URL ?? `http://localhost:${PORT}`;
+const KAKAO_CALLBACK = `${SERVER_URL}/api/auth/kakao/callback`;
+const GOOGLE_CALLBACK = `${SERVER_URL}/api/auth/google/callback`;
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
