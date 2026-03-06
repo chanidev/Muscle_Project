@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "dependencies": {
     "cookie-parser": "^1",
     "cors": "^2",
