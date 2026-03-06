@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "dependencies": {
+    "cookie-parser": "^1",
+    "cors": "^2",
+    "dotenv": "^16",
+    "express": "^5",
+    "http-proxy-middleware": "^3",
+    "jsonwebtoken": "^9",
+    "pg": "^8"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1",
+    "@types/cors": "^2",
+    "@types/express": "^5",
+    "@types/jsonwebtoken": "^9",
+    "@types/node": "^22",
+    "@types/pg": "^8",
+    "typescript": "^5"
+  }
+}
